@@ -9,7 +9,21 @@ namespace Caso_de_estudio_1___Preferencias_de_Actividades
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            NombreAlumnoTXT.Clear(); //Tambien se puede utilizar el metodo NombreAlumnoTXT.Text = ""; para limpiar el TextBox
+            //Desmarcamos el checkbox de las actividades
+            DibujoArtisticoCB.Checked = false;
+            ProgramacionWebCB.Checked = false;
+            InstrumentosMusicalesCB.Checked = false;
+            AprendizajeDeLenguasCB.Checked = false;
+            DeportesCB.Checked = false;
+            //Desmarcar Radiobutton 
+              PresencialRB.Checked = false;
+                OnlineRB.Checked = false;
+            HibridaRB.Checked = false;
+            //Limpiar el TextBox del resumen
+            ResumenTXT.Clear();
+            //Reegresamos el cursor al TextBox del nombre
+            NombreAlumnoTXT.Focus();
         }
 
         private void NombreAlumnoTXT_TextChanged(object sender, EventArgs e)
@@ -79,18 +93,53 @@ namespace Caso_de_estudio_1___Preferencias_de_Actividades
             }
             if (DeportesCB.Checked)
             {
-                actividades.Add("Deportes");
+                actividades.Add("Deportes o Atletismo");
             }
-                //========================
-                //3-. Almenos una actividad seleccionada -- Esta seccion es en el ListBox donde se seleccionan las actividades
-                if (actividades.Count == 0)
-                {
-                    MessageBox.Show("Porfavor, selecciona al menos una actividad", "Validacion", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                }
+            //========================
+            //3-. Almenos una actividad seleccionada -- Esta seccion es en el ListBox donde se seleccionan las actividades
+            if (actividades.Count == 0)
+            {
+                MessageBox.Show("Porfavor, selecciona al menos una actividad",
+                    "Validacion", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            //======================
+            // 4-. Obtener la modalidad seleccionada -- Esta seccion es en el ListBox donde se seleccionan las Modalidades
+            //======================
+
+            string modalidad = "";
+            if (PresencialRB.Checked)
+            {
+                modalidad = "Presencial";
+
+            }
+            else if (OnlineRB.Checked)
+            {
+                modalidad = "Online";
+            }
+            else if (HibridaRB.Checked)
+            {
+                modalidad = "Hibrida";
+            }
+            else
+            {
+                MessageBox.Show("Porfavor, selecciona una modalidad",
+                    "Validacion", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
 
 
             }
+            //======================
+            // 5-. Crear el resumen -- Esta seccion se mostrara el resumen de el nombre, las actividades y la modalidad seleccionada en el cuadro de texto de el resumen
+            //======================
+
+            string resumen =
+                "RESUMEN DE PREFERENCIAS\r\n" +
+                "--------------------------\r\n" +
+                "Nombre: " + NombreAlumnoTXT.Text + "\r\n" +
+                "Actividades: " + string.Join(", ", actividades) + "\r\n" +
+                "Modalidad: " + modalidad;
+            ResumenTXT.Text = resumen;
+        }
 
 
         private void DibujoArtisticoCB_CheckedChanged(object sender, EventArgs e)
@@ -104,6 +153,16 @@ namespace Caso_de_estudio_1___Preferencias_de_Actividades
         }
 
         private void InstrumentosMusicalesCB_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void OnlineRB_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ResumenTXT_TextChanged(object sender, EventArgs e)
         {
 
         }

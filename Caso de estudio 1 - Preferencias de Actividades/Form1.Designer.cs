@@ -53,17 +53,18 @@
             label1.AutoSize = true;
             label1.BackColor = Color.AliceBlue;
             label1.Font = new Font("Sylfaen", 24F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label1.Location = new Point(160, 63);
+            label1.Location = new Point(140, 47);
             label1.Name = "label1";
-            label1.Size = new Size(412, 52);
+            label1.Size = new Size(338, 42);
             label1.TabIndex = 0;
             label1.Text = "Nombre de el Alumno";
             // 
             // NombreAlumnoTXT
             // 
-            NombreAlumnoTXT.Location = new Point(614, 84);
+            NombreAlumnoTXT.Location = new Point(537, 63);
+            NombreAlumnoTXT.Margin = new Padding(3, 2, 3, 2);
             NombreAlumnoTXT.Name = "NombreAlumnoTXT";
-            NombreAlumnoTXT.Size = new Size(535, 27);
+            NombreAlumnoTXT.Size = new Size(469, 23);
             NombreAlumnoTXT.TabIndex = 1;
             NombreAlumnoTXT.TextChanged += NombreAlumnoTXT_TextChanged;
             // 
@@ -75,9 +76,11 @@
             ActividadesGB.Controls.Add(InstrumentosMusicalesCB);
             ActividadesGB.Controls.Add(ProgramacionWebCB);
             ActividadesGB.Controls.Add(DibujoArtisticoCB);
-            ActividadesGB.Location = new Point(191, 169);
+            ActividadesGB.Location = new Point(167, 127);
+            ActividadesGB.Margin = new Padding(3, 2, 3, 2);
             ActividadesGB.Name = "ActividadesGB";
-            ActividadesGB.Size = new Size(426, 238);
+            ActividadesGB.Padding = new Padding(3, 2, 3, 2);
+            ActividadesGB.Size = new Size(373, 178);
             ActividadesGB.TabIndex = 2;
             ActividadesGB.TabStop = false;
             ActividadesGB.Text = "Actividades preferentes";
@@ -86,9 +89,10 @@
             // DeportesCB
             // 
             DeportesCB.AutoSize = true;
-            DeportesCB.Location = new Point(32, 181);
+            DeportesCB.Location = new Point(28, 136);
+            DeportesCB.Margin = new Padding(3, 2, 3, 2);
             DeportesCB.Name = "DeportesCB";
-            DeportesCB.Size = new Size(173, 24);
+            DeportesCB.Size = new Size(137, 19);
             DeportesCB.TabIndex = 4;
             DeportesCB.Text = "Deportes o Atletismo";
             DeportesCB.UseVisualStyleBackColor = true;
@@ -96,9 +100,10 @@
             // AprendizajeDeLenguasCB
             // 
             AprendizajeDeLenguasCB.AutoSize = true;
-            AprendizajeDeLenguasCB.Location = new Point(32, 151);
+            AprendizajeDeLenguasCB.Location = new Point(28, 113);
+            AprendizajeDeLenguasCB.Margin = new Padding(3, 2, 3, 2);
             AprendizajeDeLenguasCB.Name = "AprendizajeDeLenguasCB";
-            AprendizajeDeLenguasCB.Size = new Size(194, 24);
+            AprendizajeDeLenguasCB.Size = new Size(154, 19);
             AprendizajeDeLenguasCB.TabIndex = 3;
             AprendizajeDeLenguasCB.Text = "Aprendizaje de Lenguas ";
             AprendizajeDeLenguasCB.UseVisualStyleBackColor = true;
@@ -107,9 +112,10 @@
             // InstrumentosMusicalesCB
             // 
             InstrumentosMusicalesCB.AutoSize = true;
-            InstrumentosMusicalesCB.Location = new Point(32, 121);
+            InstrumentosMusicalesCB.Location = new Point(28, 91);
+            InstrumentosMusicalesCB.Margin = new Padding(3, 2, 3, 2);
             InstrumentosMusicalesCB.Name = "InstrumentosMusicalesCB";
-            InstrumentosMusicalesCB.Size = new Size(184, 24);
+            InstrumentosMusicalesCB.Size = new Size(151, 19);
             InstrumentosMusicalesCB.TabIndex = 2;
             InstrumentosMusicalesCB.Text = "Instrumentos Musicales";
             InstrumentosMusicalesCB.UseVisualStyleBackColor = true;
@@ -118,9 +124,10 @@
             // ProgramacionWebCB
             // 
             ProgramacionWebCB.AutoSize = true;
-            ProgramacionWebCB.Location = new Point(32, 91);
+            ProgramacionWebCB.Location = new Point(28, 68);
+            ProgramacionWebCB.Margin = new Padding(3, 2, 3, 2);
             ProgramacionWebCB.Name = "ProgramacionWebCB";
-            ProgramacionWebCB.Size = new Size(158, 24);
+            ProgramacionWebCB.Size = new Size(128, 19);
             ProgramacionWebCB.TabIndex = 1;
             ProgramacionWebCB.Text = "Programacion Web";
             ProgramacionWebCB.UseVisualStyleBackColor = true;
@@ -129,9 +136,10 @@
             // DibujoArtisticoCB
             // 
             DibujoArtisticoCB.AutoSize = true;
-            DibujoArtisticoCB.Location = new Point(32, 61);
+            DibujoArtisticoCB.Location = new Point(28, 46);
+            DibujoArtisticoCB.Margin = new Padding(3, 2, 3, 2);
             DibujoArtisticoCB.Name = "DibujoArtisticoCB";
-            DibujoArtisticoCB.Size = new Size(135, 24);
+            DibujoArtisticoCB.Size = new Size(108, 19);
             DibujoArtisticoCB.TabIndex = 0;
             DibujoArtisticoCB.Text = "Dibujo Artistico";
             DibujoArtisticoCB.UseVisualStyleBackColor = true;
@@ -143,9 +151,11 @@
             ModalidadGB24.Controls.Add(HibridaRB);
             ModalidadGB24.Controls.Add(OnlineRB);
             ModalidadGB24.Controls.Add(PresencialRB);
-            ModalidadGB24.Location = new Point(709, 169);
+            ModalidadGB24.Location = new Point(620, 127);
+            ModalidadGB24.Margin = new Padding(3, 2, 3, 2);
             ModalidadGB24.Name = "ModalidadGB24";
-            ModalidadGB24.Size = new Size(419, 238);
+            ModalidadGB24.Padding = new Padding(3, 2, 3, 2);
+            ModalidadGB24.Size = new Size(367, 178);
             ModalidadGB24.TabIndex = 3;
             ModalidadGB24.TabStop = false;
             ModalidadGB24.Text = "Modalidad Preferida";
@@ -154,9 +164,10 @@
             // HibridaRB
             // 
             HibridaRB.AutoSize = true;
-            HibridaRB.Location = new Point(56, 180);
+            HibridaRB.Location = new Point(49, 135);
+            HibridaRB.Margin = new Padding(3, 2, 3, 2);
             HibridaRB.Name = "HibridaRB";
-            HibridaRB.Size = new Size(80, 24);
+            HibridaRB.Size = new Size(64, 19);
             HibridaRB.TabIndex = 2;
             HibridaRB.TabStop = true;
             HibridaRB.Text = "Hibrida";
@@ -165,20 +176,23 @@
             // OnlineRB
             // 
             OnlineRB.AutoSize = true;
-            OnlineRB.Location = new Point(56, 120);
+            OnlineRB.Location = new Point(49, 90);
+            OnlineRB.Margin = new Padding(3, 2, 3, 2);
             OnlineRB.Name = "OnlineRB";
-            OnlineRB.Size = new Size(73, 24);
+            OnlineRB.Size = new Size(60, 19);
             OnlineRB.TabIndex = 1;
             OnlineRB.TabStop = true;
             OnlineRB.Text = "Online";
             OnlineRB.UseVisualStyleBackColor = true;
+            OnlineRB.CheckedChanged += OnlineRB_CheckedChanged;
             // 
             // PresencialRB
             // 
             PresencialRB.AutoSize = true;
-            PresencialRB.Location = new Point(56, 60);
+            PresencialRB.Location = new Point(49, 45);
+            PresencialRB.Margin = new Padding(3, 2, 3, 2);
             PresencialRB.Name = "PresencialRB";
-            PresencialRB.Size = new Size(96, 24);
+            PresencialRB.Size = new Size(78, 19);
             PresencialRB.TabIndex = 0;
             PresencialRB.TabStop = true;
             PresencialRB.Text = "Presencial";
@@ -188,9 +202,10 @@
             // LimpiarBTN
             // 
             LimpiarBTN.BackColor = Color.SkyBlue;
-            LimpiarBTN.Location = new Point(741, 431);
+            LimpiarBTN.Location = new Point(648, 323);
+            LimpiarBTN.Margin = new Padding(3, 2, 3, 2);
             LimpiarBTN.Name = "LimpiarBTN";
-            LimpiarBTN.Size = new Size(361, 66);
+            LimpiarBTN.Size = new Size(316, 50);
             LimpiarBTN.TabIndex = 0;
             LimpiarBTN.Text = "Limpiar";
             LimpiarBTN.UseVisualStyleBackColor = false;
@@ -199,9 +214,10 @@
             // MostrarResumenBTN
             // 
             MostrarResumenBTN.BackColor = Color.LightSkyBlue;
-            MostrarResumenBTN.Location = new Point(223, 431);
+            MostrarResumenBTN.Location = new Point(195, 323);
+            MostrarResumenBTN.Margin = new Padding(3, 2, 3, 2);
             MostrarResumenBTN.Name = "MostrarResumenBTN";
-            MostrarResumenBTN.Size = new Size(349, 66);
+            MostrarResumenBTN.Size = new Size(305, 50);
             MostrarResumenBTN.TabIndex = 4;
             MostrarResumenBTN.Text = "Mostrar Resumen";
             MostrarResumenBTN.UseVisualStyleBackColor = false;
@@ -212,9 +228,9 @@
             label2.AutoSize = true;
             label2.BackColor = Color.AliceBlue;
             label2.Font = new Font("Sylfaen", 24F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label2.Location = new Point(57, 574);
+            label2.Location = new Point(50, 430);
             label2.Name = "label2";
-            label2.Size = new Size(194, 52);
+            label2.Size = new Size(159, 42);
             label2.TabIndex = 5;
             label2.Text = "Resumen:";
             label2.Click += label2_Click;
@@ -222,19 +238,21 @@
             // ResumenTXT
             // 
             ResumenTXT.Font = new Font("Consolas", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            ResumenTXT.Location = new Point(125, 639);
+            ResumenTXT.Location = new Point(109, 479);
+            ResumenTXT.Margin = new Padding(3, 2, 3, 2);
             ResumenTXT.Multiline = true;
             ResumenTXT.Name = "ResumenTXT";
             ResumenTXT.ReadOnly = true;
-            ResumenTXT.Size = new Size(1122, 168);
+            ResumenTXT.Size = new Size(982, 127);
             ResumenTXT.TabIndex = 6;
+            ResumenTXT.TextChanged += ResumenTXT_TextChanged;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Lavender;
-            ClientSize = new Size(1376, 849);
+            ClientSize = new Size(1212, 658);
             Controls.Add(ResumenTXT);
             Controls.Add(label2);
             Controls.Add(LimpiarBTN);
@@ -243,6 +261,7 @@
             Controls.Add(ActividadesGB);
             Controls.Add(NombreAlumnoTXT);
             Controls.Add(label1);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "Form1";
             Text = "Actividades preferentes";
             ActividadesGB.ResumeLayout(false);
